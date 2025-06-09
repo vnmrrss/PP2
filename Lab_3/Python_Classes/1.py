@@ -1,19 +1,14 @@
-#1:
-class OutLine:
-
+class MyString:
     def __init__(self):
+        self.string = ""
 
-        self.line = ""
+    def getString(self):
+        self.string = input("Enter a string: ")
 
-    def get_str(self):
-        self.line = input("Enter a string: ")
+    def printString(self):
+        print(self.string.upper())
 
-    def prin_tstr(self):
+s = MyString()
+s.getString()
+s.printString()
 
-        return self.line.upper()
-
-jol = OutLine()
-
-jol.get_str()
-
-print("Upper str:", jol.prin_tstr())
